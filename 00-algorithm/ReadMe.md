@@ -1,0 +1,3 @@
+- The script core-linkage.py will get its data from a MySQL database
+- The data to regenerate the data is present in the `microdb270916.sql` file. The file was compressed and split into 8 chunks for uploading it to github.
+- The user and database name for MySQL can be changed in `lib/metaGraph.py` L142

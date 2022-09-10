@@ -1,0 +1,1532 @@
+Loaded 232 taxa and 401 samples
+Traceback (most recent call last):
+  File "/home/fer/bin/core-linkage.py", line 141, in <module>
+    MetaGraph(parseArguments())
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 34, in __init__
+    self.baseModel = self.runModel()
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 305, in runModel
+    return Model(paMatrix, self.environments[self.args.env_partition], self.args.pval_cutoff, self.args.bootstrap, self.args.processors)
+  File "/home/fer/opt/core-linkage/lib/model.py", line 53, in __init__
+    partialMatrix = self.buildProbabilityMatrix(self.paMatrix[list(samples)])
+  File "/home/fer/opt/core-linkage/lib/model.py", line 148, in buildProbabilityMatrix
+    pars = fsolve(ClikelihoodPartial, np.array(guesses), args = paMatrix.as_matrix(), fprime = CjacLP, diag=1/np.array(guesses))
+  File "/usr/local/lib/python3.5/dist-packages/scipy/optimize/minpack.py", line 146, in fsolve
+    res = _root_hybr(func, x0, args, jac=fprime, **options)
+  File "/usr/local/lib/python3.5/dist-packages/scipy/optimize/minpack.py", line 230, in _root_hybr
+    col_deriv, xtol, maxfev, factor, diag)
+KeyboardInterrupt
+Loaded 232 taxa and 401 samples
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 5
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 9
+Generating random matrix 50
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+Generating random matrix 54
+Generating random matrix 80
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 84
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 57
+Generating random matrix 58
+Generating random matrix 59
+Generating random matrix 85
+Generating random matrix 86
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 35
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 39
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 65
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 69
+Generating random matrix 90
+Generating random matrix 91
+Generating random matrix 92
+Generating random matrix 93
+Generating random matrix 94
+Generating random matrix 20
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 24
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 95
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 99
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Traceback (most recent call last):
+  File "/home/fer/bin/core-linkage.py", line 141, in <module>
+    MetaGraph(parseArguments())
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 31, in __init__
+    self.loadData()
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 125, in loadData
+    self.loadTaxaFromMICRODB()      
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 178, in loadTaxaFromMICRODB
+    taxonSampleSourcesEnv = [taxonSampleSourceEnv for taxonSampleSourceEnv in c if taxonSampleSourceEnv[0] not in ('Unresolved', 'Inconsistent', None)]
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 178, in <listcomp>
+    taxonSampleSourcesEnv = [taxonSampleSourceEnv for taxonSampleSourceEnv in c if taxonSampleSourceEnv[0] not in ('Unresolved', 'Inconsistent', None)]
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/cursors.py", line 483, in next
+    row = self.fetchone()
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/cursors.py", line 454, in fetchone
+    r = self._fetch_row(1)
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/cursors.py", line 351, in _fetch_row
+    return self._result.fetch_row(size, self._fetch_type)
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/connections.py", line 230, in string_decoder
+    def string_decoder(s):
+KeyboardInterrupt
+Generating graph 25
+Generating graph 26
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 40
+Generating graph 41
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 78
+Generating graph 79
+Generating graph 10
+Generating graph 11
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 55
+Generating graph 56
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 70
+Generating graph 71
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Generating graph 20
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 24
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 48
+Generating graph 49
+Generating graph 80
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 84
+Generating graph 95
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 99
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 3
+Generating graph 4
+Generating graph 50
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 54
+Generating graph 85
+Generating graph 86
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 18
+Generating graph 19
+Generating graph 35
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 39
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 63
+Generating graph 64
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 93
+Generating graph 94
+Generating graph 5
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 9
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 33
+Generating graph 34
+Generating graph 65
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 69
+Traceback (most recent call last):
+  File "/home/fer/bin/core-linkage.py", line 70, in <module>
+    from lib.metaGraph import MetaGraph
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 13, in <module>
+    from pandas import DataFrame
+  File "/usr/local/lib/python3.5/dist-packages/pandas/__init__.py", line 39, in <module>
+    from pandas.core.api import *
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/api.py", line 10, in <module>
+    from pandas.core.groupby import Grouper
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/groupby.py", line 18, in <module>
+    from pandas.core.frame import DataFrame
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 39, in <module>
+    from pandas.core.series import Series
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/series.py", line 2944, in <module>
+    import pandas.tools.plotting as _gfx  # noqa
+  File "/usr/local/lib/python3.5/dist-packages/pandas/tools/plotting.py", line 27, in <module>
+    import pandas.tseries.converter as conv
+  File "/usr/local/lib/python3.5/dist-packages/pandas/tseries/converter.py", line 8, in <module>
+    import matplotlib.dates as dates
+  File "/usr/local/lib/python3.5/dist-packages/matplotlib/dates.py", line 136, in <module>
+    import matplotlib.ticker as ticker
+  File "/usr/local/lib/python3.5/dist-packages/matplotlib/ticker.py", line 181, in <module>
+    from matplotlib import transforms as mtransforms
+  File "/usr/local/lib/python3.5/dist-packages/matplotlib/transforms.py", line 55, in <module>
+    MINFLOAT = np.MachAr(float).xmin
+  File "/usr/local/lib/python3.5/dist-packages/numpy/core/machar.py", line 114, in __init__
+    self._do_init(float_conv, int_conv, float_to_float, float_to_str, title)
+  File "/usr/local/lib/python3.5/dist-packages/numpy/core/machar.py", line 260, in _do_init
+    if any(temp1*beta == y) and any(temp != y):
+  File "/usr/local/lib/python3.5/dist-packages/numpy/core/fromnumeric.py", line 1950, in any
+    return arr.any(axis=axis, out=out, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/numpy/core/_methods.py", line 38, in _any
+    return umr_any(a, axis, dtype, out, keepdims)
+KeyboardInterrupt
+Loaded 480 taxa and 922 samples
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 35
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 39
+Generating random matrix 65
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 69
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 85
+Generating random matrix 86
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 57
+Generating random matrix 58
+Generating random matrix 59
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 20
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 24
+Generating random matrix 50
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+Generating random matrix 54
+Generating random matrix 80
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 84
+Generating random matrix 95
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 99
+Generating random matrix 5
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 9
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 90
+Generating random matrix 91
+Generating random matrix 92
+Generating random matrix 93
+Generating random matrix 94
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Traceback (most recent call last):
+  File "/home/fer/bin/core-linkage.py", line 141, in <module>
+    MetaGraph(parseArguments())
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 31, in __init__
+    self.loadData()
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 125, in loadData
+    self.loadTaxaFromMICRODB()      
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 148, in loadTaxaFromMICRODB
+    envSupertypeWhiteList = {i[0] for i in c}
+  File "/home/fer/opt/core-linkage/lib/metaGraph.py", line 148, in <setcomp>
+    envSupertypeWhiteList = {i[0] for i in c}
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/cursors.py", line 483, in next
+    row = self.fetchone()
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/cursors.py", line 454, in fetchone
+    r = self._fetch_row(1)
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/cursors.py", line 351, in _fetch_row
+    return self._result.fetch_row(size, self._fetch_type)
+  File "/usr/local/lib/python3.5/dist-packages/MySQLdb/connections.py", line 231, in string_decoder
+    return s.decode(string_decoder.charset)
+KeyboardInterrupt
+Loaded 297 taxa and 445 samples
+	There were rounding errors in score calculation for pair: 9-143
+	A score of 40.71 was asigned by an approximate method.
+Generating random matrix 20
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 24
+Generating random matrix 35
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 39
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 50
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+Generating random matrix 54
+Generating random matrix 80
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 84
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 57
+Generating random matrix 58
+Generating random matrix 59
+Generating random matrix 85
+Generating random matrix 86
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Generating random matrix 5
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 9
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 65
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 69
+Generating random matrix 90
+Generating random matrix 91
+Generating random matrix 92
+Generating random matrix 93
+Generating random matrix 94
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 95
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 99
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 18
+Generating graph 19
+Generating graph 40
+Generating graph 41
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 63
+Generating graph 64
+Generating graph 5
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 9
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 48
+Generating graph 49
+Generating graph 80
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 84
+Generating graph 10
+Generating graph 11
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 55
+Generating graph 56
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 78
+Generating graph 79
+Generating graph 25
+Generating graph 26
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 33
+Generating graph 34
+Generating graph 65
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 69
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 93
+Generating graph 94
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 3
+Generating graph 4
+Generating graph 35
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 39
+Generating graph 70
+Generating graph 71
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Generating graph 95
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 99
+Generating graph 20
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 24
+Generating graph 50
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 54
+Generating graph 85
+Generating graph 86
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 25
+Generating graph 26
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 50
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 54
+Generating graph 80
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 84
+Generating graph 5
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 9
+Generating graph 40
+Generating graph 41
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 70
+Generating graph 71
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 3
+Generating graph 4
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 48
+Generating graph 49
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 78
+Generating graph 79
+Generating graph 20
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 24
+Generating graph 55
+Generating graph 56
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 85
+Generating graph 86
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 18
+Generating graph 19
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 33
+Generating graph 34
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 63
+Generating graph 64
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 93
+Generating graph 94
+Generating graph 10
+Generating graph 11
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 35
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 39
+Generating graph 65
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 69
+Generating graph 95
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 99
+Loaded 654 taxa and 1418 samples
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 65
+Generating random matrix 99
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+Generating random matrix 84
+Generating random matrix 85
+Generating random matrix 86
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+	No solution, trying again... (#2)
+Generating random matrix 69
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 20
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 39
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 54
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 90
+Generating random matrix 91
+Generating random matrix 92
+Generating random matrix 24
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 50
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 5
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 9
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 80
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 35
+Generating random matrix 57
+Generating random matrix 58
+Generating random matrix 59
+Generating random matrix 93
+Generating random matrix 94
+Generating random matrix 95
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 69
+Generating graph 70
+Generating graph 71
+Generating graph 99
+Generating graph 18
+Generating graph 19
+Generating graph 20
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 33
+Generating graph 34
+Generating graph 35
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 54
+Generating graph 55
+Generating graph 56
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 78
+Generating graph 79
+Generating graph 80
+Generating graph 24
+Generating graph 25
+Generating graph 26
+Generating graph 63
+Generating graph 64
+Generating graph 65
+Generating graph 84
+Generating graph 85
+Generating graph 86
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 39
+Generating graph 40
+Generating graph 41
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 3
+Generating graph 4
+Generating graph 5
+Generating graph 48
+Generating graph 49
+Generating graph 50
+Generating graph 93
+Generating graph 94
+Generating graph 95
+Generating graph 9
+Generating graph 10
+Generating graph 11
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Loaded 538 taxa and 1290 samples
+	There were rounding errors in score calculation for pair: 284-285
+	A score of 61.85 was asigned by an approximate method.
+Loaded 653 taxa and 1415 samples
+Generating random matrix 9
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 54
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 99
+	No solution, trying again... (#2)
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 35
+	No solution, trying again... (#2)
+	No solution, trying again... (#3)
+Generating random matrix 69
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 24
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 39
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 80
+	No solution, trying again... (#2)
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 5
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 20
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 57
+Generating random matrix 58
+	No solution, trying again... (#2)
+Generating random matrix 59
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+	No solution, trying again... (#2)
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 90
+Generating random matrix 91
+	No solution, trying again... (#2)
+Generating random matrix 92
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 50
+Generating random matrix 84
+Generating random matrix 85
+Generating random matrix 86
+	No solution, trying again... (#2)
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 65
+Generating random matrix 93
+Generating random matrix 94
+Generating random matrix 95
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 35
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 39
+Generating random matrix 65
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 69
+Generating random matrix 95
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 99
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+Generating random matrix 50
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+Generating random matrix 54
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 80
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 84
+Generating random matrix 5
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 9
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 90
+Generating random matrix 91
+Generating random matrix 92
+Generating random matrix 93
+Generating random matrix 94
+Generating random matrix 20
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 24
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 57
+Generating random matrix 58
+Generating random matrix 59
+Generating random matrix 85
+Generating random matrix 86
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Generating graph 20
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 24
+Generating graph 55
+Generating graph 56
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 85
+Generating graph 86
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 3
+Generating graph 4
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 48
+Generating graph 49
+Generating graph 70
+Generating graph 71
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Generating graph 25
+Generating graph 26
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 33
+Generating graph 34
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 63
+Generating graph 64
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 93
+Generating graph 94
+Generating graph 10
+Generating graph 11
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 40
+Generating graph 41
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 78
+Generating graph 79
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 18
+Generating graph 19
+Generating graph 50
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 54
+Generating graph 80
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 84
+Generating graph 5
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 9
+Generating graph 35
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 39
+Generating graph 65
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 69
+Generating graph 95
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 99
+Generating graph 9
+Generating graph 10
+Generating graph 11
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 99
+Generating graph 3
+Generating graph 4
+Generating graph 5
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 84
+Generating graph 85
+Generating graph 86
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 63
+Generating graph 64
+Generating graph 65
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 54
+Generating graph 55
+Generating graph 56
+Generating graph 78
+Generating graph 79
+Generating graph 80
+Generating graph 24
+Generating graph 25
+Generating graph 26
+Generating graph 69
+Generating graph 70
+Generating graph 71
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 33
+Generating graph 34
+Generating graph 35
+Generating graph 48
+Generating graph 49
+Generating graph 50
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 18
+Generating graph 19
+Generating graph 20
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 39
+Generating graph 40
+Generating graph 41
+Generating graph 93
+Generating graph 94
+Generating graph 95
+Loaded 480 taxa and 922 samples
+Generating random matrix 20
+Generating random matrix 21
+Generating random matrix 22
+Generating random matrix 23
+Generating random matrix 24
+Generating random matrix 45
+Generating random matrix 46
+Generating random matrix 47
+Generating random matrix 48
+Generating random matrix 49
+Generating random matrix 70
+Generating random matrix 71
+Generating random matrix 72
+Generating random matrix 73
+Generating random matrix 74
+Generating random matrix 10
+Generating random matrix 11
+Generating random matrix 12
+Generating random matrix 13
+Generating random matrix 14
+Generating random matrix 35
+Generating random matrix 36
+Generating random matrix 37
+Generating random matrix 38
+Generating random matrix 39
+Generating random matrix 65
+Generating random matrix 66
+Generating random matrix 67
+Generating random matrix 68
+Generating random matrix 69
+Generating random matrix 25
+Generating random matrix 26
+Generating random matrix 27
+Generating random matrix 28
+Generating random matrix 29
+Generating random matrix 55
+Generating random matrix 56
+Generating random matrix 57
+Generating random matrix 58
+Generating random matrix 59
+Generating random matrix 85
+Generating random matrix 86
+Generating random matrix 87
+Generating random matrix 88
+Generating random matrix 89
+Generating random matrix 0
+Generating random matrix 1
+Generating random matrix 2
+Generating random matrix 3
+Generating random matrix 4
+Generating random matrix 50
+Generating random matrix 51
+Generating random matrix 52
+Generating random matrix 53
+Generating random matrix 54
+Generating random matrix 80
+Generating random matrix 81
+Generating random matrix 82
+Generating random matrix 83
+Generating random matrix 84
+Generating random matrix 15
+Generating random matrix 16
+Generating random matrix 17
+Generating random matrix 18
+Generating random matrix 19
+Generating random matrix 40
+Generating random matrix 41
+Generating random matrix 42
+Generating random matrix 43
+Generating random matrix 44
+Generating random matrix 75
+Generating random matrix 76
+Generating random matrix 77
+Generating random matrix 78
+Generating random matrix 79
+Generating random matrix 95
+Generating random matrix 96
+Generating random matrix 97
+Generating random matrix 98
+Generating random matrix 99
+Generating random matrix 5
+Generating random matrix 6
+Generating random matrix 7
+Generating random matrix 8
+Generating random matrix 9
+Generating random matrix 30
+Generating random matrix 31
+Generating random matrix 32
+Generating random matrix 33
+Generating random matrix 34
+Generating random matrix 60
+Generating random matrix 61
+Generating random matrix 62
+Generating random matrix 63
+Generating random matrix 64
+Generating random matrix 90
+Generating random matrix 91
+Generating random matrix 92
+Generating random matrix 93
+Generating random matrix 94
+Fitting mean null aggregation scores...
+Fitting std null aggregation scores...
+Correcting aggregation scores...
+Generating graph 15
+Generating graph 16
+Generating graph 17
+Generating graph 18
+Generating graph 19
+Generating graph 40
+Generating graph 41
+Generating graph 42
+Generating graph 43
+Generating graph 44
+Generating graph 70
+Generating graph 71
+Generating graph 72
+Generating graph 73
+Generating graph 74
+Generating graph 25
+Generating graph 26
+Generating graph 27
+Generating graph 28
+Generating graph 29
+Generating graph 35
+Generating graph 36
+Generating graph 37
+Generating graph 38
+Generating graph 39
+Generating graph 60
+Generating graph 61
+Generating graph 62
+Generating graph 63
+Generating graph 64
+Generating graph 95
+Generating graph 96
+Generating graph 97
+Generating graph 98
+Generating graph 99
+Generating graph 0
+Generating graph 1
+Generating graph 2
+Generating graph 3
+Generating graph 4
+Generating graph 55
+Generating graph 56
+Generating graph 57
+Generating graph 58
+Generating graph 59
+Generating graph 85
+Generating graph 86
+Generating graph 87
+Generating graph 88
+Generating graph 89
+Generating graph 10
+Generating graph 11
+Generating graph 12
+Generating graph 13
+Generating graph 14
+Generating graph 30
+Generating graph 31
+Generating graph 32
+Generating graph 33
+Generating graph 34
+Generating graph 65
+Generating graph 66
+Generating graph 67
+Generating graph 68
+Generating graph 69
+Generating graph 90
+Generating graph 91
+Generating graph 92
+Generating graph 93
+Generating graph 94
+Generating graph 20
+Generating graph 21
+Generating graph 22
+Generating graph 23
+Generating graph 24
+Generating graph 50
+Generating graph 51
+Generating graph 52
+Generating graph 53
+Generating graph 54
+Generating graph 80
+Generating graph 81
+Generating graph 82
+Generating graph 83
+Generating graph 84
+Generating graph 5
+Generating graph 6
+Generating graph 7
+Generating graph 8
+Generating graph 9
+Generating graph 45
+Generating graph 46
+Generating graph 47
+Generating graph 48
+Generating graph 49
+Generating graph 75
+Generating graph 76
+Generating graph 77
+Generating graph 78
+Generating graph 79
